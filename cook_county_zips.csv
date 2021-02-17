@@ -1,0 +1,173 @@
+,zip,lat,lng,city,state_id,state_name,zcta,parent_zcta,population,density,county_fips,county_name,county_weights,county_names_all,county_fips_all,imprecise,military,timezone
+10173,31620,31.11841,-83.43765,Adel,GA,Georgia,True,,10835.0,33.5,13075,Cook,"{""13075"": ""100""}",Cook,13075,False,False,America/New_York
+10179,31627,31.04112,-83.39219,Cecil,GA,Georgia,True,,257.0,113.1,13075,Cook,"{""13075"": ""100""}",Cook,13075,False,False,America/New_York
+10194,31647,31.21053,-83.4306,Sparks,GA,Georgia,True,,3781.0,32.4,13075,Cook,"{""13075"": ""100""}",Cook,13075,False,False,America/New_York
+18657,55604,47.96004,-90.56468,Grand Marais,MN,Minnesota,True,,3578.0,1.6,27031,Cook,"{""27031"": ""100""}",Cook,27031,False,False,America/Chicago
+18658,55605,47.96314,-89.75309,Grand Portage,MN,Minnesota,True,,684.0,3.7,27031,Cook,"{""27031"": ""100""}",Cook,27031,False,False,America/Chicago
+18659,55606,47.93521,-89.99773,Hovland,MN,Minnesota,True,,188.0,0.6,27031,Cook,"{""27031"": ""100""}",Cook,27031,False,False,America/Chicago
+18662,55612,47.77269,-90.70127,Lutsen,MN,Minnesota,True,,520.0,1.2,27031,Cook,"{""27031"": ""100""}",Cook,27031,False,False,America/Chicago
+18663,55613,47.60721,-90.95745,Schroeder,MN,Minnesota,True,,178.0,0.8,27031,Cook,"{""27031"": ""100""}",Cook,27031,False,False,America/Chicago
+18665,55615,47.73504,-90.83271,Tofte,MN,Minnesota,True,,228.0,0.8,27031,Cook,"{""27031"": ""100""}",Cook,27031,False,False,America/Chicago
+20416,60004,42.11196,-87.97909,Arlington Heights,IL,Illinois,True,,50639.0,1764.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20417,60005,42.06394,-87.98567,Arlington Heights,IL,Illinois,True,,30079.0,1770.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20418,60007,42.00757,-87.99297,Elk Grove Village,IL,Illinois,True,,33161.0,907.8,17031,Cook,"{""17031"": ""100"", ""17043"": ""0""}",Cook|DuPage,17031|17043,False,False,America/Chicago
+20419,60008,42.07445,-88.02268,Rolling Meadows,IL,Illinois,True,,21663.0,1616.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20425,60016,42.0497,-87.89166,Des Plaines,IL,Illinois,True,,59291.0,2155.2,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20426,60018,41.99743,-87.89695,Des Plaines,IL,Illinois,True,,30037.0,706.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20429,60022,42.13608,-87.7676,Glencoe,IL,Illinois,True,,8471.0,830.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20430,60025,42.0754,-87.82044,Glenview,IL,Illinois,True,,40935.0,1373.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20431,60026,42.09223,-87.83745,Glenview,IL,Illinois,True,,14021.0,1328.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20432,60029,42.05926,-87.77837,Golf,IL,Illinois,True,,476.0,219.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20441,60043,42.08886,-87.71459,Kenilworth,IL,Illinois,True,,2460.0,1546.2,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20449,60053,42.04234,-87.78897,Morton Grove,IL,Illinois,True,,23089.0,1773.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20450,60056,42.06653,-87.93426,Mount Prospect,IL,Illinois,True,,54524.0,1958.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20453,60062,42.12656,-87.84438,Northbrook,IL,Illinois,True,,40686.0,848.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20455,60067,42.10658,-88.06541,Palatine,IL,Illinois,True,,37840.0,1066.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20456,60068,42.0125,-87.84355,Park Ridge,IL,Illinois,True,,37433.0,2038.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20458,60070,42.10343,-87.93022,Prospect Heights,IL,Illinois,True,,15908.0,1701.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20462,60074,42.13149,-88.02657,Palatine,IL,Illinois,True,,39217.0,2123.5,17031,Cook,"{""17031"": ""99.53"", ""17097"": ""0.47""}",Cook|Lake,17031|17097,False,False,America/Chicago
+20463,60076,42.03525,-87.72988,Skokie,IL,Illinois,True,,31788.0,2292.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20464,60077,42.03478,-87.75719,Skokie,IL,Illinois,True,,27626.0,2649.2,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20472,60090,42.12952,-87.92194,Wheeling,IL,Illinois,True,,38553.0,1586.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20473,60091,42.07696,-87.72801,Wilmette,IL,Illinois,True,,27165.0,1960.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20474,60093,42.10437,-87.7587,Winnetka,IL,Illinois,True,,19409.0,879.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20482,60104,41.88283,-87.87644,Bellwood,IL,Illinois,True,,18904.0,3100.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20484,60107,42.02214,-88.17931,Streamwood,IL,Illinois,True,,39894.0,1931.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20499,60130,41.86642,-87.81738,Forest Park,IL,Illinois,True,,13927.0,1941.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20500,60131,41.93884,-87.88441,Franklin Park,IL,Illinois,True,,17834.0,1240.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20501,60133,41.97761,-88.14301,Hanover Park,IL,Illinois,True,,38113.0,1809.8,17031,Cook,"{""17031"": ""54.16"", ""17043"": ""45.84""}",Cook|DuPage,17031|17043,False,False,America/Chicago
+20508,60141,41.85786,-87.838,Hines,IL,Illinois,True,,302.0,278.2,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20518,60153,41.8793,-87.84327,Maywood,IL,Illinois,True,,23578.0,3037.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20519,60154,41.84749,-87.89167,Westchester,IL,Illinois,True,,16440.0,1316.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20520,60155,41.85781,-87.85636,Broadview,IL,Illinois,True,,7755.0,1611.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20523,60160,41.90416,-87.86061,Melrose Park,IL,Illinois,True,,25666.0,2228.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20524,60162,41.86758,-87.90222,Hillside,IL,Illinois,True,,8176.0,986.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20525,60163,41.88887,-87.90906,Berkeley,IL,Illinois,True,,5103.0,1223.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20526,60164,41.91751,-87.90066,Melrose Park,IL,Illinois,True,,21228.0,1728.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20527,60165,41.90325,-87.88077,Stone Park,IL,Illinois,True,,4894.0,5559.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20528,60169,42.05039,-88.11667,Hoffman Estates,IL,Illinois,True,,33373.0,1676.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20529,60171,41.92507,-87.83843,River Grove,IL,Illinois,True,,10076.0,1723.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20531,60173,42.05157,-88.05195,Schaumburg,IL,Illinois,True,,12610.0,794.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20534,60176,41.95823,-87.86888,Schiller Park,IL,Illinois,True,,11621.0,1693.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20546,60192,42.0737,-88.18227,Hoffman Estates,IL,Illinois,True,,15467.0,566.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20547,60193,42.01176,-88.09626,Schaumburg,IL,Illinois,True,,39646.0,1675.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20548,60194,42.03363,-88.11148,Schaumburg,IL,Illinois,True,,19525.0,2081.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20549,60195,42.06705,-88.09128,Schaumburg,IL,Illinois,True,,5020.0,982.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20550,60201,42.05652,-87.6972,Evanston,IL,Illinois,True,,41884.0,3423.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20551,60202,42.03045,-87.68954,Evanston,IL,Illinois,True,,32703.0,4132.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20552,60203,42.04904,-87.71748,Evanston,IL,Illinois,True,,4397.0,2489.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20553,60301,41.88876,-87.79919,Oak Park,IL,Illinois,True,,2831.0,6981.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20554,60302,41.89463,-87.78971,Oak Park,IL,Illinois,True,,31620.0,4054.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20555,60304,41.87243,-87.78948,Oak Park,IL,Illinois,True,,17782.0,4480.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20556,60305,41.895,-87.81936,River Forest,IL,Illinois,True,,10970.0,1710.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20558,60402,41.83469,-87.79139,Berwyn,IL,Illinois,True,,62960.0,4613.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20561,60406,41.65472,-87.68184,Blue Island,IL,Illinois,True,,25338.0,1758.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20564,60409,41.61324,-87.55133,Calumet City,IL,Illinois,True,,36658.0,1902.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20566,60411,41.50869,-87.59056,Chicago Heights,IL,Illinois,True,,57603.0,702.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20567,60415,41.70292,-87.77881,Chicago Ridge,IL,Illinois,True,,14123.0,2371.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20570,60419,41.62773,-87.59942,Dolton,IL,Illinois,True,,22436.0,2059.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20573,60422,41.53698,-87.68411,Flossmoor,IL,Illinois,True,,9941.0,911.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20576,60425,41.54551,-87.61171,Glenwood,IL,Illinois,True,,8842.0,709.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20577,60426,41.61032,-87.65341,Harvey,IL,Illinois,True,,28683.0,1437.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20578,60428,41.59979,-87.69055,Markham,IL,Illinois,True,,12180.0,905.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20579,60429,41.57366,-87.68409,Hazel Crest,IL,Illinois,True,,15108.0,1491.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20580,60430,41.55767,-87.66468,Homewood,IL,Illinois,True,,19691.0,1116.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20587,60438,41.56661,-87.55086,Lansing,IL,Illinois,True,,28633.0,1391.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20588,60439,41.67519,-87.98218,Lemont,IL,Illinois,True,,23435.0,297.6,17031,Cook,"{""17031"": ""91.25"", ""17043"": ""6.63"", ""17197"": ""2.12""}",Cook|DuPage|Will,17031|17043|17197,False,False,America/Chicago
+20592,60443,41.50371,-87.74683,Matteson,IL,Illinois,True,,21554.0,719.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20594,60445,41.63502,-87.7362,Midlothian,IL,Illinois,True,,25810.0,1441.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20601,60452,41.60768,-87.75529,Oak Forest,IL,Illinois,True,,28008.0,1162.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20602,60453,41.71427,-87.75282,Oak Lawn,IL,Illinois,True,,55966.0,2555.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20603,60455,41.74211,-87.80864,Bridgeview,IL,Illinois,True,,16144.0,1431.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20604,60456,41.73125,-87.73105,Hometown,IL,Illinois,True,,4272.0,3444.2,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20605,60457,41.72464,-87.82808,Hickory Hills,IL,Illinois,True,,13816.0,1841.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20606,60458,41.74892,-87.83452,Justice,IL,Illinois,True,,15197.0,2042.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20607,60459,41.74447,-87.76859,Burbank,IL,Illinois,True,,28709.0,2641.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20609,60461,41.51665,-87.69085,Olympia Fields,IL,Illinois,True,,4716.0,655.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20610,60462,41.62487,-87.83242,Orland Park,IL,Illinois,True,,39784.0,980.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20611,60463,41.66096,-87.78997,Palos Heights,IL,Illinois,True,,14798.0,1062.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20612,60464,41.66249,-87.86181,Palos Park,IL,Illinois,True,,9662.0,477.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20613,60465,41.69845,-87.82878,Palos Hills,IL,Illinois,True,,17345.0,1410.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20614,60466,41.47904,-87.68284,Park Forest,IL,Illinois,True,,21909.0,1320.8,17031,Cook,"{""17031"": ""84.24"", ""17197"": ""15.76""}",Cook|Will,17031|17197,False,False,America/Chicago
+20615,60467,41.6018,-87.88989,Orland Park,IL,Illinois,True,,26861.0,713.5,17031,Cook,"{""17031"": ""91.12"", ""17197"": ""8.88""}",Cook|Will,17031|17197,False,False,America/Chicago
+20617,60469,41.62825,-87.68712,Posen,IL,Illinois,True,,5795.0,2389.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20619,60471,41.47959,-87.73403,Richton Park,IL,Illinois,True,,13917.0,1120.2,17031,Cook,"{""17031"": ""99.54"", ""17197"": ""0.46""}",Cook|Will,17031|17197,False,False,America/Chicago
+20620,60472,41.64375,-87.7088,Robbins,IL,Illinois,True,,4904.0,1144.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20621,60473,41.59738,-87.59979,South Holland,IL,Illinois,True,,22088.0,1002.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20624,60476,41.56864,-87.60671,Thornton,IL,Illinois,True,,2550.0,291.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20625,60477,41.57255,-87.78869,Tinley Park,IL,Illinois,True,,37542.0,1136.0,17031,Cook,"{""17031"": ""99.99"", ""17197"": ""0.01""}",Cook|Will,17031|17197,False,False,America/Chicago
+20626,60478,41.56381,-87.72468,Country Club Hills,IL,Illinois,True,,16769.0,1246.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20628,60480,41.72896,-87.88088,Willow Springs,IL,Illinois,True,,5151.0,340.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20630,60482,41.68735,-87.79106,Worth,IL,Illinois,True,,10849.0,1715.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20632,60487,41.56358,-87.83422,Tinley Park,IL,Illinois,True,,26736.0,1197.0,17031,Cook,"{""17031"": ""71.7"", ""17197"": ""28.3""}",Cook|Will,17031|17197,False,False,America/Chicago
+20635,60501,41.78014,-87.82394,Summit Argo,IL,Illinois,True,,11874.0,947.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20644,60513,41.82458,-87.84691,Brookfield,IL,Illinois,True,,18753.0,2294.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20654,60525,41.78424,-87.86893,La Grange,IL,Illinois,True,,30474.0,933.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20655,60526,41.83183,-87.87395,La Grange Park,IL,Illinois,True,,13451.0,1890.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20660,60534,41.81338,-87.82213,Lyons,IL,Illinois,True,,10452.0,2377.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20671,60546,41.83803,-87.82144,Riverside,IL,Illinois,True,,15405.0,1535.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20682,60558,41.80612,-87.90159,Western Springs,IL,Illinois,True,,13272.0,1454.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20691,60601,41.88526,-87.62194,Chicago,IL,Illinois,True,,15083.0,16145.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20692,60602,41.88309,-87.62912,Chicago,IL,Illinois,True,,1145.0,5078.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20693,60603,41.88022,-87.62549,Chicago,IL,Illinois,True,,1052.0,2803.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20694,60604,41.87814,-87.62837,Chicago,IL,Illinois,True,,823.0,3431.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20695,60605,41.86684,-87.61983,Chicago,IL,Illinois,True,,29060.0,9009.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20696,60606,41.88195,-87.63731,Chicago,IL,Illinois,True,,3287.0,5769.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20697,60607,41.87503,-87.65157,Chicago,IL,Illinois,True,,29293.0,4941.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20698,60608,41.84878,-87.67131,Chicago,IL,Illinois,True,,80059.0,4904.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20699,60609,41.81252,-87.6556,Chicago,IL,Illinois,True,,60939.0,3039.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20700,60610,41.90487,-87.63615,Chicago,IL,Illinois,True,,40548.0,13527.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20701,60611,41.89472,-87.61938,Chicago,IL,Illinois,True,,33224.0,15690.2,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20702,60612,41.88033,-87.68765,Chicago,IL,Illinois,True,,33735.0,3474.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20703,60613,41.95586,-87.65781,Chicago,IL,Illinois,True,,50761.0,9012.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20704,60614,41.92273,-87.65131,Chicago,IL,Illinois,True,,71954.0,8905.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20705,60615,41.80223,-87.60259,Chicago,IL,Illinois,True,,40590.0,7084.2,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20706,60616,41.84525,-87.62725,Chicago,IL,Illinois,True,,54197.0,5234.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20707,60617,41.71591,-87.55432,Chicago,IL,Illinois,True,,83553.0,2328.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20708,60618,41.947,-87.70244,Chicago,IL,Illinois,True,,94907.0,7332.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20709,60619,41.74365,-87.60557,Chicago,IL,Illinois,True,,61207.0,3924.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20710,60620,41.7408,-87.65252,Chicago,IL,Illinois,True,,67711.0,3690.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20711,60621,41.77639,-87.63943,Chicago,IL,Illinois,True,,28018.0,2901.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20712,60622,41.90275,-87.6833,Chicago,IL,Illinois,True,,53294.0,8329.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20713,60623,41.84808,-87.71778,Chicago,IL,Illinois,True,,81283.0,5842.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20714,60624,41.88056,-87.72335,Chicago,IL,Illinois,True,,34892.0,3811.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20715,60625,41.97341,-87.7002,Chicago,IL,Illinois,True,,79444.0,7916.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20716,60626,42.00903,-87.66962,Chicago,IL,Illinois,True,,50544.0,11446.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20717,60628,41.69176,-87.61796,Chicago,IL,Illinois,True,,64254.0,2271.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20718,60629,41.77567,-87.71176,Chicago,IL,Illinois,True,,110029.0,6245.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20719,60630,41.97213,-87.75709,Chicago,IL,Illinois,True,,56433.0,4563.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20720,60631,41.99474,-87.81318,Chicago,IL,Illinois,True,,29529.0,3063.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20721,60632,41.81133,-87.71335,Chicago,IL,Illinois,True,,89857.0,4667.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20722,60633,41.66435,-87.56136,Chicago,IL,Illinois,True,,12689.0,476.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20723,60634,41.94634,-87.80606,Chicago,IL,Illinois,True,,75082.0,4075.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20724,60636,41.77575,-87.66911,Chicago,IL,Illinois,True,,30024.0,2963.2,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20725,60637,41.78143,-87.60318,Chicago,IL,Illinois,True,,47300.0,4032.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20726,60638,41.78145,-87.77056,Chicago,IL,Illinois,True,,58669.0,2039.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20727,60639,41.92058,-87.75607,Chicago,IL,Illinois,True,,88204.0,6982.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20728,60640,41.97237,-87.66347,Chicago,IL,Illinois,True,,69363.0,11102.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20729,60641,41.94663,-87.74669,Chicago,IL,Illinois,True,,69880.0,6675.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20730,60642,41.90161,-87.65803,Chicago,IL,Illinois,True,,19716.0,4605.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20731,60643,41.69955,-87.66276,Chicago,IL,Illinois,True,,48887.0,2569.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20732,60644,41.8802,-87.75751,Chicago,IL,Illinois,True,,46591.0,5134.2,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20733,60645,42.00853,-87.6948,Chicago,IL,Illinois,True,,47270.0,8084.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20734,60646,41.99301,-87.7596,Chicago,IL,Illinois,True,,28569.0,2412.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20735,60647,41.92065,-87.70175,Chicago,IL,Illinois,True,,87633.0,8417.9,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20736,60649,41.76303,-87.57036,Chicago,IL,Illinois,True,,46633.0,6146.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20737,60651,41.90208,-87.74089,Chicago,IL,Illinois,True,,63492.0,7013.5,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20738,60652,41.74795,-87.71479,Chicago,IL,Illinois,True,,43447.0,3345.2,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20739,60653,41.81924,-87.61007,Chicago,IL,Illinois,True,,33154.0,5487.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20740,60654,41.89228,-87.63727,Chicago,IL,Illinois,True,,20022.0,13668.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20741,60655,41.69476,-87.70379,Chicago,IL,Illinois,True,,28569.0,2504.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20742,60656,41.97424,-87.82692,Chicago,IL,Illinois,True,,28218.0,3333.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20743,60657,41.93991,-87.65382,Chicago,IL,Illinois,True,,70958.0,12050.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20744,60659,41.99108,-87.70416,Chicago,IL,Illinois,True,,42735.0,8138.3,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20745,60660,41.99111,-87.66605,Chicago,IL,Illinois,True,,44498.0,13319.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20746,60661,41.88309,-87.64401,Chicago,IL,Illinois,True,,10354.0,13448.1,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20747,60706,41.96425,-87.81624,Harwood Heights,IL,Illinois,True,,23114.0,3017.4,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20748,60707,41.9218,-87.80724,Elmwood Park,IL,Illinois,True,,43093.0,4611.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20749,60712,42.00545,-87.7333,Lincolnwood,IL,Illinois,True,,12434.0,1805.0,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20750,60714,42.02805,-87.81098,Niles,IL,Illinois,True,,29520.0,1791.6,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20751,60803,41.6721,-87.73568,Alsip,IL,Illinois,True,,22405.0,1141.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20752,60804,41.83783,-87.76014,Cicero,IL,Illinois,True,,82383.0,4155.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20753,60805,41.722,-87.70244,Evergreen Park,IL,Illinois,True,,19479.0,2206.8,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
+20754,60827,41.64956,-87.63016,Riverdale,IL,Illinois,True,,28483.0,1567.7,17031,Cook,"{""17031"": ""100""}",Cook,17031,False,False,America/Chicago
