@@ -56,10 +56,6 @@ def get_cities():
 
     return cities
 
-cities = get_cities()
-#print(cities)
-
-
 
 def get_restaurant_links_cook():
     cities = get_cities()
@@ -79,10 +75,6 @@ def get_restaurant_links_cook():
         for suffix in page_suffix:
             html_page = html + "&start=" + str(suffix)
             url_list.append(html_page)
-
-    #for url in request_list:
-    #    print(url)
-
 
     r'''
     with open(r"c:\Users\35653\Desktop\CS122\project\urls.txt", "w") as write_file:
@@ -112,69 +104,47 @@ def get_restaurant_links_cook():
                     if tag["name"] != '':
                         if link not in links:
                             links.append(link + "\n")
-    '''
-    with open(r"c:\Users\35653\Desktop\CS122\project\links.txt", "w") as write_file:
-        write_file.writelines(links)
-
-        write_file.close()
-    '''
-
-get_restaurant_links()
-
-
-def get_rental_links():
-    
-    return None
-
-
-    '''
-
-    #print(len(links))
-
-    #https://www.yelp.com/search?find_desc=Restaurants&find_loc=Blue%20Island%2C%20IL
-    #https://www.yelp.com/search?find_desc=Restaurants&find_loc=Blue%20Island%2C%20IL&start=10
-    #https://www.yelp.com/search?find_desc=Restaurants&find_loc=Blue%20Island%2C%20IL&start=20
-
-    #https://www.yelp.com/search?find_desc=&find_loc=Adel%2C%20GA
-'''
+    return links
 
 
 def get_restaurant_links_chicago():
     # start from searching "Restaurant", "Chicago" from yelp main page
-    url = 'https://www.yelp.com/search?find_desc=Restaurants&find_loc=Chicago%2C%20IL&start=0'
-    request = util.get_request(url)
-    text = util.read_request(request)
+    page_suffix = [i for i in range(0, 231, 10)]
+    url = 'https://www.yelp.com/search?find_desc=Restaurants&find_loc=Chicago%2C%20IL&start='
+    url_list = []
 
-    soup = bs4.BeautifulSoup(text, "html5lib")
-    tags = soup.find_all('a', href=True, target="", role="")
+    for suffix in page_suffix:
+        page_url = url + str(suffix)
+        url_list.append(page_url)
 
-    # extract href links to restaurants
     links = []
-    for tag in tags:  
-        link = tag['href']
-        link = util.convert_if_relative_url(url, link)
-        link = util.remove_fragment(link)
-        # Hardcoded filter
-        if link[-11:] == "Restaurants":
-            if tag["name"] != '':
-                if link not in links:
-                    links.append(link)
 
-    for link in links:
-        print(link)
+    for url in url_list:
+    
+        request = util.get_request(url)
+        text = util.read_request(request)
+
+        soup = bs4.BeautifulSoup(text, "html5lib")
+        tags = soup.find_all('a', href=True, target="", role="")
+
+        # extract href links to restaurants
+        links = []
+        for tag in tags:  
+            link = tag['href']
+            link = util.convert_if_relative_url(url, link)
+            link = util.remove_fragment(link)
+            # Hardcoded filter
+            if link[-11:] == "Restaurants":
+                if tag["name"] != '':
+                    if link not in links:
+                        links.append(link)
+
+    return links
+
+
+def get_rental_links():
     '''
-
-
-##### REFERENCE #####
-'''
-# All links
-<a class=" link__09f24__1MGLa photo-box-link__09f24__28L0f link-color--blue-dark__09f24__tK18E link-size--default__09f24__QvrjA" href="/biz/boxcar-bettys-chicago-2?osq=Restaurants" target="" name="" rel="">
-<a class=" link__09f24__1MGLa link-color--inherit__09f24__3Cplm link-size--default__09f24__QvrjA" href="/search?cflt=sandwiches&amp;find_desc=Restaurants&amp;find_loc=Chicago%2C+IL" target="" name="" rel="" role="link">
-
-# Repeated links
-'https://www.yelp.com/biz/the-delta-chicago?osq=Restaurants'
-'https://www.yelp.com/biz/the-delta-chicago?hrid=qtOXI4YDVJNFHs4GvZqGuA&osq=Restaurants'
-
-<a class=" link__09f24__1MGLa link-color--inherit__09f24__3Cplm link-size--inherit__09f24__3Javq" href="/biz/penumbra-chicago?osq=Restaurants" target="" name="Penumbra" rel="">
-<a class=" link__09f24__1MGLa link-color--blue-dark__09f24__tK18E link-size--inherit__09f24__3Javq" href="/biz/penumbra-chicago?hrid=_DHfzbvVXSfBoHjJHAx8kg&amp;osq=Restaurants" target="" name="" rel="">
-'''
+    get rental links according to the zip codes of restaurants
+    '''
+    
+    return None
