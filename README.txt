@@ -1,6 +1,6 @@
 Crawler code structure:
 
-**Starting from https://www.yelp.com/
+*Starting from https://www.yelp.com/
 
 Searching conditions:
 1. Put "Restaurants" into Find
