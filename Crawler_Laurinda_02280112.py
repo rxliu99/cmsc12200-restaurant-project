@@ -1,4 +1,4 @@
-# Crawling data from Yelp
+# Crawling restaurant data given links
 
 import re
 import util
@@ -50,5 +50,3 @@ def to_csv(df):
     Load pandas dataframe to csv
     '''
     return df.to_csv('info.csv', index=False)
-
-

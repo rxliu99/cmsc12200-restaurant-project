@@ -31,7 +31,7 @@ for tag in tags:
 
 
 ##### REFERENCE #####
-
+'''
 # All links
 <a class=" link__09f24__1MGLa photo-box-link__09f24__28L0f link-color--blue-dark__09f24__tK18E link-size--default__09f24__QvrjA" href="/biz/boxcar-bettys-chicago-2?osq=Restaurants" target="" name="" rel="">
 <a class=" link__09f24__1MGLa link-color--inherit__09f24__3Cplm link-size--default__09f24__QvrjA" href="/search?cflt=sandwiches&amp;find_desc=Restaurants&amp;find_loc=Chicago%2C+IL" target="" name="" rel="" role="link">
@@ -42,3 +42,4 @@ for tag in tags:
 
 <a class=" link__09f24__1MGLa link-color--inherit__09f24__3Cplm link-size--inherit__09f24__3Javq" href="/biz/penumbra-chicago?osq=Restaurants" target="" name="Penumbra" rel="">
 <a class=" link__09f24__1MGLa link-color--blue-dark__09f24__tK18E link-size--inherit__09f24__3Javq" href="/biz/penumbra-chicago?hrid=_DHfzbvVXSfBoHjJHAx8kg&amp;osq=Restaurants" target="" name="" rel="">
+'''
