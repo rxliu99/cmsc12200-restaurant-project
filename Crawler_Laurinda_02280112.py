@@ -16,13 +16,14 @@ def get_info(links):
     '''
     info = []
 
-    for link in links:
+    for url in links:
         restaurant = {}
         request = util.get_request(url)
         text = util.read_request(request)
         soup = bs4.BeautifulSoup(text, "html5lib")
         tag = soup.find('script', type='application/ld+json')
         d = json.loads(tag.text)
+        
 
         restaurant['name'] = d['name']
         restaurant['price_range'] = d['priceRange']         #'$11-30'
