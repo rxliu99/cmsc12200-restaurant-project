@@ -10,7 +10,6 @@ Or, default search "Restaurants" and "Chicago"
 then extract links to all restaurants
     1. how to pick out links to restaurants
 
-
 **On a specific restaurant page, find the following:
 
 1. zip_code
@@ -31,3 +30,9 @@ Need to calculate the mean of "reviewValue"
 Need to find the length of dict val corresponding to the key "review"
 #yelp_lecolonial.htm line 398, "review":[{"author":"Munsanje M.","datePublished":\
     "2021-01-24","reviewRating":{"ratingValue":5},"description":"xxxx"}, {review#2 etc.}]
+
+***Problems to solve:
+
+1. Sometimes cannot get 240 exact links
+
+2. cralwer info sometime gives None tag; only 185/240
