@@ -4,15 +4,14 @@ Boxcar Betty&apos;s,,Sandwiches,11,4.909090909090909
 The Perch,,American (New),20,4.35
 Penumbra,$11-30,Seafood,20,4.55
 Quesabirria Jalisco Restaurant,,Mexican,20,4.75
-Amaru,,Latin American,20,4.7
 Kennedy Rooftop,,American (New),20,4.25
 Giant,$31-60,American (New),20,4.3
 Mott St,$11-30,Asian Fusion,20,4.35
 Lao Peng You,$11-30,Chinese,20,4.3
-Au Cheval,$11-30,American (Traditional),20,4.35
 The Delta,$11-30,Southern,20,4.0
 Lost Larson,,Sandwiches,13,3.769230769230769
 Forbidden Root,$11-30,Tapas/Small Plates,20,4.05
+Kasama,,Filipino,20,4.75
 Folklore Argentine Grill,$11-30,Argentine,20,3.85
 Machine: Engineered Dining &amp; Drink,$11-30,American (New),20,4.3
 Sea &amp; Olive,,Mediterranean,20,4.35
@@ -25,14 +24,16 @@ En Hakkore 2.0,$11-30,Asian Fusion,20,4.8
 Landbirds,$11-30,Chicken Wings,20,4.2
 Pub Royale,$11-30,British,20,3.75
 Longman &amp; Eagle,$11-30,Gastropubs,20,4.2
+Boeufhaus,$31-60,Brasseries,20,4.1
 Cinnaholic,,Vegan,7,4.428571428571429
 Maple &amp; Ash,Above $61,Steakhouses,20,4.6
-Split-Rail,$11-30,American (Traditional),20,4.25
+Savannah Luncheonette,,Comfort Food,1,5.0
 Lucy&apos;s,$11-30,American (Traditional),20,3.9
 All Together Now,$11-30,American (New),20,4.5
 Phodega,$11-30,Vietnamese,20,4.1
 Cafe Istanbul,$11-30,Turkish,20,4.45
 Antico,$31-60,Italian,20,4.45
+SoJu BBQ,$11-30,Korean,20,4.45
 The Parlor &quot;Grand Speakeasy&quot;,,American (New),20,4.3
 JJ Thai Street Food,$11-30,Thai,20,4.15
 Offset BBQ,,Barbeque,20,4.65
@@ -41,15 +42,17 @@ Little Goat Diner,$11-30,Diners,20,4.55
 Tortello,$11-30,Italian,20,4.65
 The Clampdown,,American (Traditional),3,4.0
 Fry The Coop,$11-30,American (Traditional),20,4.45
-90 Miles Cuban Café,$11-30,Cuban,20,4.45
+Taqueria Chingon,,Mexican,20,4.5
 Small Cheval,$11-30,Burgers,20,4.25
 The Bristol,$11-30,American (New),20,4.15
 Beatnik West Town,$11-30,Breakfast &amp; Brunch,20,3.55
 Perilla Korean American Fare,,Korean,20,4.4
 Paulie Gee&apos;s Wicker Park,,Pizza,1,5.0
-Handlebar,$11-30,Vegetarian,20,4.5
+Bárbaro Taquería,$11-30,Mexican,20,4.6
 Scofflaw,$11-30,American (New),20,3.85
+Alinea,Above $61,American (New),20,4.5
 Wonder Chop,,Chinese,20,4.85
+Wynwood Kitchen &amp; Spirits,,American (New),20,3.7
 Mindy&apos;s Hot Chocolate,$11-30,American (Traditional),20,4.45
 Butcher &amp; The Burger,$11-30,Burgers,20,4.45
 Owen &amp; Engine,$11-30,Gastropubs,20,4.5
@@ -64,17 +67,17 @@ Bonchon Division St,$11-30,Korean,20,3.65
 Reve Burger,,Burgers,12,3.1666666666666665
 Silli Kori,$11-30,Thai,20,4.4
 SPICY FINGERS  Seafood Kitchen,,Seafood,20,4.4
+jeong,,Korean,20,4.6
 Andros Taverna,,Greek,10,4.6
 Crisp,$11-30,Korean,20,4.5
 Three Dots and a Dash,$11-30,Asian Fusion,20,4.15
-Takito Kitchen,$11-30,Mexican,20,4.4
 The Bongo Room,$11-30,American (New),20,4.1
 Paradise Park,$11-30,Pizza,20,4.15
 Olivia&apos;s Market,$31-60,Delis,20,4.45
 Smoke Daddy,$11-30,Barbeque,20,3.75
 Avec River North,,Mediterranean,3,3.6666666666666665
+Lula Cafe,$11-30,American (New),20,4.45
 Soulé,$11-30,Cajun/Creole,20,3.45
-Lawn Restaurant - Hamburger,,Cheesesteaks,20,4.8
 Eat Me Milk Me,Under $10,Themed Cafes,20,4.45
 Serai,$11-30,Malaysian,20,4.35
 Mama Delia,,Spanish,20,3.9
@@ -85,42 +88,43 @@ Mom&apos;s,,Japanese,8,4.75
 Crazy Bird,Under $10,Chicken Wings,20,4.3
 The Whale Chicago,$11-30,American (New),20,4.15
 Bungalow by Middle Brow,$11-30,Pizza,20,3.65
-Flat &amp; Point,,American (New),20,4.6
-Del Seoul,Under $10,Korean,20,4.45
 Ipsento 606,$11-30,Sandwiches,20,3.8
+Chef’s Special Cocktail Bar,,Chinese,20,4.15
 The Arch,,American (Traditional),3,4.0
 Cracked on Milwaukee,$11-30,Breakfast &amp; Brunch,20,4.35
+Kimchi Pop,$11-30,Korean,20,4.4
 Kai Zan,$31-60,Asian Fusion,20,4.6
 Rumi Middle Eastern Grill,Under $10,Mediterranean,20,4.45
 The Publican,$31-60,American (New),20,3.9
+Enoteca Roma Ristorante,$11-30,Italian,20,4.55
 Portillo&apos;s Hot Dogs,Under $10,Hot Dogs,20,4.15
 Bourbon On Division,$11-30,Southern,20,3.35
-The Loyalist,$11-30,American (New),20,4.25
 Wake ‘n Bacon,,Breakfast &amp; Brunch,20,4.75
 Chicago Pizza And Oven Grinder Company,$11-30,Pizza,20,4.6
 Bixi Beer,$11-30,Asian Fusion,20,4.55
 "Table, Donkey and Stick",$11-30,Modern European,20,4.3
-Duck Duck Goat,$31-60,Chinese,20,4.5
+Goose Island Shrimp House Chicago,Under $10,Seafood,20,3.9
 En Hakkore,$11-30,Korean,20,4.6
 Aba,$31-60,Mediterranean,20,4.7
+Sushi Taku,$11-30,Japanese,20,3.95
 Kraken Sushi &amp; Beyond,,Japanese,6,4.833333333333333
-Flour Power,,Italian,14,4.642857142857143
+The Boil Cajun Seafood,,Cajun/Creole,20,3.75
 Sir Chicken,,Chicken Shop,7,4.428571428571429
 Irazú Costa Rican Restaurant &amp; Catering,$11-30,Latin American,20,4.65
 Kapitan,,Asian Fusion,20,4.3
 Same Same,$11-30,Thai,20,4.4
-Galit,$11-30,Mediterranean,20,4.9
 Mable&apos;s Table,$11-30,American (New),20,4.15
 Lonesome Rose,$11-30,Mexican,20,4.15
-Tatas Tacos,,Tacos,3,5.0
 Honey Butter Fried Chicken,$11-30,Chicken Shop,20,4.0
 Taxim,$31-60,Greek,20,3.9
+Humboldt Haus Sandwich Bar,Under $10,Sandwiches,20,4.25
 Nomonomo Japanese Pub &amp; Grill,,Japanese,10,3.9
 Summer House Santa Monica,$11-30,American (Traditional),20,4.6
 La Malinche Coffee House,,Sandwiches,2,5.0
 Wyler Road,$11-30,Sandwiches,20,4.15
 The StopAlong,$11-30,Pizza,20,4.1
 Shawarma Garden,Under $10,Middle Eastern,20,4.25
+Piece Brewery and Pizzeria,$11-30,Pizza,20,4.0
 Doc B&apos;s Restaurant + Bar,$11-30,American (New),20,4.45
 Bar Siena,$11-30,Italian,20,4.2
 Milly’s Pizza In The Pan,,Pizza,20,4.9
@@ -144,21 +148,19 @@ Hops &amp; Curds,,Comfort Food,16,4.8125
 Green Street Smoked Meats,$11-30,Barbeque,20,4.45
 Iron Age Korean Steakhouse,$11-30,Korean,20,3.9
 Pizza Friendly Pizza,,Pizza,20,4.55
+Haidilao Hot Pot,,Chinese,4,5.0
+Sfera Sicilian Street Food,,Sicilian,7,5.0
 Spinning J Bakery and Soda Fountain,$11-30,Breakfast &amp; Brunch,20,4.6
-Bavette&apos;s Bar &amp; Boeuf,$31-60,Steakhouses,20,4.6
 The Moonlighter,$11-30,Burgers,20,3.9
-Namaste Chicago,$11-30,Indian,20,4.55
 Sushi + Rotary Sushi Bar Bucktown,,Conveyor Belt Sushi,5,5.0
 Ina Mae Tavern &amp; Packaged Goods,$11-30,Southern,20,3.45
+Knead Great Pizza,$11-30,Pizza,20,4.6
 Daebak Lincoln Park,,Korean,6,4.666666666666667
-Mogadishu Restaurant,Under $10,African,20,4.55
 Cela&apos;s Boricua Style Hot Dog,,Hot Dogs,1,5.0
-Sapori Trattoria,$11-30,Italian,20,4.7
-XOchimilco Mexican Restaurant,$11-30,Mexican,20,4.95
+Boka,$31-60,American (New),20,4.6
+Flo,$11-30,Breakfast &amp; Brunch,20,4.55
 The Dawson,$11-30,American (Traditional),20,3.8
 Big League Burgers,,Burgers,17,4.411764705882353
-ArePA George,$11-30,Colombian,20,4.1
-Avec - Chicago,$31-60,Mediterranean,20,4.3
 Mini Mott,$11-30,Burgers,20,3.95
 Lil&apos; Ba-Ba-Reeba,,Seafood,6,4.5
 KINTON RAMEN,$11-30,Ramen,20,4.25
@@ -167,9 +169,9 @@ La Sandwichera,,Sandwiches,1,5.0
 Tejanos,,Tex-Mex,13,4.3076923076923075
 Caribella,$11-30,Breakfast &amp; Brunch,20,4.7
 Paulie Gee&apos;s Logan Square,$11-30,Pizza,20,4.2
+Papa&apos;s Cache Sabroso,$11-30,Latin American,20,4.7
 El Habanero,$11-30,Mexican,20,4.3
 The Dandy Crown,,American (New),16,4.375
-Hash,$11-30,Breakfast &amp; Brunch,20,4.7
 MAK Restaurant,$11-30,Asian Fusion,20,3.85
 Gaijin,$11-30,Japanese,20,4.5
 Monteverde,$31-60,Italian,20,4.7
@@ -178,9 +180,27 @@ Bartoli’s Pizzeria,,Pizza,17,4.411764705882353
 Crab Cellar,Above $61,Seafood,20,4.65
 Qing Xiang Yuan Dumplings,$11-30,Barbeque,20,4.55
 Smoque BBQ,$11-30,Barbeque,20,4.5
-Arbella,$11-30,Tapas/Small Plates,20,4.7
 Tempesta Market,$11-30,Delis,20,4.55
+The Crab Pad,$11-30,Seafood,20,3.65
 The Fat Shallot - Lincoln Park,$11-30,Sandwiches,20,4.75
-Philly Bros,$11-30,Halal,20,4.2
 Chicago Fajitas,,Mexican,1,5.0
 Osteria Langhe,$31-60,Italian,20,4.95
+The Picky Vegan,,Vegan,2,5.0
+Mr Dumpling,,Chinese,20,4.0
+Le Sud,$31-60,Mediterranean,20,4.7
+True Food Kitchen,$11-30,American (New),20,4.15
+Menya Goku By Ramen Wasabi,$11-30,Ramen,20,4.55
+Bill Kim Asian Comfort Food,,Korean,6,4.333333333333333
+Craft Pizza,$11-30,Pizza,20,4.55
+Jerk &amp; Soul Food,,Caribbean,5,3.2
+Velvet Taco Gold Coast,$11-30,American (New),20,4.15
+Jinsei Motto,,Sushi Bars,2,5.0
+Cafe Robey,$11-30,Breakfast &amp; Brunch,20,4.05
+Buona Terra,$11-30,Italian,20,4.75
+Heritage Restaurant &amp; Caviar Bar,$31-60,Seafood,20,4.75
+Sultan&apos;s Market,Under $10,Middle Eastern,20,4.5
+Reno,$11-30,American (Traditional),20,3.85
+Tryzub Ukrainian Kitchen,$11-30,Ukrainian,20,4.5
+JIAN,,Chinese,20,4.0
+The Violet Hour,$11-30,American (New),20,4.1
+Maggiano&apos;s Little Italy,,Italian,2,5.0

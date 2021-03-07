@@ -36,3 +36,5 @@ Need to find the length of dict val corresponding to the key "review"
 1. Sometimes cannot get 240 exact links
 
 2. cralwer info sometime gives None tag; only 185/240
+
+3. Fix apostrophe in restraurant names

@@ -40,7 +40,7 @@ def get_info(links):
             restaurant['num_review'] = len(d["review"])         # Num of reviews
             
             reviews  = d["review"]                              # Avg Rating
-            if len(d['review']) != 0:
+            if reviews != None:
                 rating = 0
                 for review in reviews:
                     rating += review['reviewRating']['ratingValue']
