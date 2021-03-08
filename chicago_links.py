@@ -1,4 +1,7 @@
 def links():
+    '''
+    240 links crawled from yelp
+    '''
     return ['https://www.yelp.com/biz/etta-bucktown-chicago?osq=Restaurants',
     'https://www.yelp.com/biz/boxcar-bettys-chicago-2?osq=Restaurants',
     'https://www.yelp.com/biz/the-perch-chicago?osq=Restaurants',

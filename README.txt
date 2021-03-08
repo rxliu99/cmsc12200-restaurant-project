@@ -1,40 +1,28 @@
-Crawler code structure:
+Project roadmap
 
-*Starting from https://www.yelp.com/
+*Task1* [Done] Caroline links crawler - 240 links saved in chicago_links.py
 
-Searching conditions:
-1. Put "Restaurants" into Find
-2. Put "city_name" from cook_county_zips.csv into Near
+*Task2* [Almost done] Laurinda restaurant info crawler - saved in info_0306.csv
 
-Or, default search "Restaurants" and "Chicago"
-then extract links to all restaurants
-    1. how to pick out links to restaurants
+        On a specific restaurant page, find the following:
+        1. name
+        2. zip_code
+        3. price_range (some None)
+        4. cuisine
+        5. num_review
+        6. rating (avg)
 
-**On a specific restaurant page, find the following:
+        Problems to solve:
+        1. Sometimes cannot get 240 exact links - use the saved 240 links for now
+        2. cralwer info sometime gives None tag; only 185/240
 
-1. zip_code
-#yelp_lecolonial.htm line 398, search for 60611, "postalCode":"60611"
+*Task3* [Progress] Michelle Rent crawler - 
 
-2. price range
-#yelp_lecolonial.htm line 398, "priceRange":"$31-60"
+*Task4* []Final csv
 
-3. cuisine
-#yelp_lecolonial.htm line 398, roll down till, "servesCuisine":"Vietnamese"
+        1. merge csv from task 2 and 3 on zip_code 
+        2. include 4 cols: zip_code, restaurant avg price, income, avg rent
 
-4. rating
-Need to calculate the mean of "reviewValue"
-#yelp_lecolonial.htm line 398, "review":[{"author":"Munsanje M.","datePublished":\
-        "2021-01-24","reviewRating":{"ratingValue":5},"description":"xxxxxx"}, {xxx}]
+*Task5* [] Multiple Linear Regression + Plot
 
-5. num of reviews
-Need to find the length of dict val corresponding to the key "review"
-#yelp_lecolonial.htm line 398, "review":[{"author":"Munsanje M.","datePublished":\
-    "2021-01-24","reviewRating":{"ratingValue":5},"description":"xxxx"}, {review#2 etc.}]
-
-***Problems to solve:
-
-1. Sometimes cannot get 240 exact links
-
-2. cralwer info sometime gives None tag; only 185/240
-
-3. Fix apostrophe in restraurant names
+*Task6* [] Data analysis

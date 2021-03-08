@@ -9,10 +9,10 @@ import sys
 import csv
 import pandas as pd
 
-
 def get_info(links):
     '''
-    Extract restaurants info
+    Extract restaurants name, zipcode, price, 
+        cuisine, num of reviews, average rating
     '''
     info = []
 
@@ -23,19 +23,24 @@ def get_info(links):
         text = util.read_request(request)
         soup = bs4.BeautifulSoup(text, "html5lib")
         tag = soup.find('script', type='application/ld+json')
+
         if tag is not None:
             d = json.loads(tag.text)
     
             restaurant['name'] = d['name'].replace('&apos;',"'").\
-                    replace('&amp;', "&")                       # deal with ' and &
+                    replace('&amp;', "&")                       # Name: deal with ' and &
             restaurant['zip_code'] = d['address']['postalCode'] # Zipcode
 
             if 'priceRange' in d:
-                restaurant['price_range'] = d['priceRange']     # eg.'$11-30'
+                price = re.findall(r'[0-9]+', d['priceRange'])  # Price
+                if len(price) == 2:
+                    restaurant['price'] = (price[1] - price[0]) / 2
+                else:
+                    restaurant['price'] = price[0]
             else:
-                restaurant['price_range'] = None
+                restaurant['price'] = 0
 
-            restaurant['cuisine'] = d['servesCuisine']          # eg.'Italian'
+            restaurant['cuisine'] = d['servesCuisine']          # Cuisine
 
             restaurant['num_review'] = len(d["review"])         # Num of reviews
             
@@ -65,4 +70,4 @@ def to_csv(df):
     '''
     Load pandas dataframe to csv
     '''
-    return df.to_csv('info_0306.csv', index=False)
+    return df.to_csv('info_0307.csv', index=False)
