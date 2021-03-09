@@ -34,7 +34,7 @@ def get_info(links):
             if 'priceRange' in d:
                 price = re.findall(r'[0-9]+', d['priceRange'])  # Price
                 if len(price) == 2:
-                    restaurant['price'] = (price[1] - price[0]) / 2
+                    restaurant['price'] = (float(price[1]) + float(price[0])) / 2
                 else:
                     restaurant['price'] = price[0]
             else:
@@ -70,4 +70,4 @@ def to_csv(df):
     '''
     Load pandas dataframe to csv
     '''
-    return df.to_csv('info_0307.csv', index=False)
+    return df.to_csv('info_0309.csv', index=False)
