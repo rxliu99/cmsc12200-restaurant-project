@@ -31,7 +31,7 @@ def go(housing_links):
         housing_links: a list of links obtained from inputing different
             zipcodes to the search bar of rentcafe.com
     Output: 
-        csv file that saves information of average housing rent in chicago
+        dictionary
     '''
     # a dictionary with zipcode as keys, avg rent price as values
     d = {}
@@ -73,7 +73,7 @@ def find_adj_price(item):
     Input:
         an item-information tag for a property
     Output:
-        bath-beds adjusted price index
+        bath-beds adjusted avg price
     '''
 
     price_info = re.findall(r'\d+(?:,\d+)?', item.find('div',\

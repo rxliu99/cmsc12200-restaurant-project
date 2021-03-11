@@ -46,8 +46,10 @@ def scrape_data():
 
     # merge two dfs
     df_final = df_restaurant.merge(df_housing, on='zip_code')
+    
+    # write final df to csv
+    df_final.to_csv('final.csv', index=False)
 
-    return df_final
 
 def run_regression():
 
