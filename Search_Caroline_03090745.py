@@ -71,20 +71,11 @@ class Restaurants:
             new_df = dataframe[dataframe[name] == category]
 
             ###modify when csv price range data type is changed
-            prices = new_df["price_range"].tolist()
-            new_prices = []
-            for price in prices:
-                if price == "$11-30":
-                    new_prices.append(20.5)
-                elif price == "Above $61":
-                    new_prices.append(70.0)
-                elif price == "$31-60":
-                    new_prices.append(45.5)
-                elif price == "Under $10":
-                    new_prices.append(5.0)
+            prices = new_df["price"].tolist()
 
-            if new_prices:
-                avg_price = np.mean(new_prices)
+
+            if prices:
+                avg_price = np.mean(prices)
                 avg_prices.append((avg_price, category))
         avg_prices.sort(reverse = True)
 
@@ -119,21 +110,11 @@ class Restaurants:
         num_rest = len(all_info)
 
         ###modify when csv price range data type is changed
-        prices = all_info["price_range"].tolist()
-        new_prices = []
-        for price in prices:
-            if price == "$11-30":
-                new_prices.append(20.5)
-            elif price == "Above $61":
-                new_prices.append(70.0)
-            elif price == "$31-60":
-                new_prices.append(45.5)
-            elif price == "Under $10":
-                new_prices.append(5.0)
+        prices = all_info["price"].tolist()
 
-        if new_prices:
-            #print(new_prices)
-            avg_price = np.mean(new_prices)
+        if prices:
+            #print(prices)
+            avg_price = np.mean(prices)
         else:
             avg_price = None
 
