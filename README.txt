@@ -16,13 +16,13 @@ Project roadmap
         1. Sometimes cannot get 240 exact links - use the saved 240 links for now
         2. cralwer info sometime gives None tag; only 185/240
 
-*Task3* [Progress] Michelle Rent crawler - 
+*Task3* [Progress] Julie Rent crawler - 
 
-*Task4* []Final csv
+*Task4* [Progress]Final csv
 
         1. merge csv from task 2 and 3 on zip_code 
         2. include 4 cols: zip_code, restaurant avg price, income, avg rent
 
-*Task5* [] Multiple Linear Regression + Plot
+*Task5* [Almost done] Michelle Multiple Linear Regression + Plot - code in regression_0310.py
 
-*Task6* [] Data analysis
+*Task6* [Progress] Text-based interface
