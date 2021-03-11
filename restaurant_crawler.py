@@ -70,4 +70,4 @@ def to_csv(df):
     '''
     Load pandas dataframe to csv
     '''
-    return df.to_csv('info_0309.csv', index=False)
+    return df.to_csv('info.csv', index=False)

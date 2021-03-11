@@ -1,3 +1,5 @@
+## 240 restaurant links returned by get_restaurant_links_chicago in links_crawler
+
 def links():
     '''
     240 links crawled from yelp
