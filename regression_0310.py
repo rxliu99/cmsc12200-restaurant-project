@@ -8,9 +8,20 @@ from sklearn import linear_model
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 
+
+def csv_merge(csv1, csv2):
+    '''
+    Merge the restaurant info csv and zip code csv
+    '''
+    df_info = pd.read_csv('info.csv')
+    df_zipcode = pd.read_csv('CSV_FILE_NAME')
+
+    return df_info.merge(df_zipcode, on='zip_code')
+
 #Might need to add a function to get the ideal csv from the two individual csv
 #files from the two crawlers
-zipcode_info = pd.read_csv('CSV_FILE_NAME')
+
+#zipcode_info = pd.read_csv('CSV_FILE_NAME') -- should be the output of the function above
 
 def linear_regression(zipcode_info):
     '''

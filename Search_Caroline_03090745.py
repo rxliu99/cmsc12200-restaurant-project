@@ -4,7 +4,7 @@ import os
 import pandas as pd
 import numpy as np
 
-csv_path = "info_0306.csv"
+csv_path = "info.csv"
 info = pd.read_csv(csv_path, header = 0, index_col = 0)
 
 '''

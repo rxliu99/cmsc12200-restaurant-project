@@ -1,7 +1,7 @@
-from search_Caroline_03090745 import Restaurants 
+from Search_Caroline_03090745 import Restaurants 
 import pandas as pd
 
-csv_path = "info_0306.csv"
+csv_path = "info.csv"
 info = pd.read_csv(csv_path, header = 0, index_col = 0)
 restaurants = Restaurants(info)
 
