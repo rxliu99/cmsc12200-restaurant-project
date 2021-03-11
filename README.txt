@@ -1,4 +1,4 @@
-Project roadmap
+*****************Project roadmap[FOR REFERENCE]*****************
 
 *Task1* [Done] Caroline links crawler - 240 links saved in chicago_links.py
 
@@ -26,3 +26,7 @@ Project roadmap
 *Task5* [Almost done] Michelle Multiple Linear Regression + Plot - code in regression_0310.py
 
 *Task6* [Progress] Text-based interface
+
+
+
+***************Project Documentation [FOR SUBMISSION]********************

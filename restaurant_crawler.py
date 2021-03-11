@@ -62,10 +62,14 @@ def get_info(links):
 
     return info
 
+def to_df(info):
+    '''
+    Load info to a pandas dataframe
+    '''
+    return pd.DataFrame.from_dict(info, orient='columns')
 
-def to_csv(info):
+def to_csv(df):
     '''
     Load info to pandas dataframe then to csv
     '''
-    return pd.DataFrame.from_dict(info, orient='columns').\
-                to_csv('info.csv', index=False)
+    return df.to_csv('info.csv', index=False)

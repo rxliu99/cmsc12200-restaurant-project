@@ -14,10 +14,10 @@ import random
 
 
 def get_restaurant_links():
-'''
-Start from searching "Restaurant", "Chicago" on yelp main page,
-and collect all restaurant links from 24 pages
-'''
+    '''
+    Start from searching "Restaurant", "Chicago" on yelp main page,
+    and collect all restaurant links from 24 pages
+    '''
 
     page_suffix = [i for i in range(0, 231, 10)]
     url = 'https://www.yelp.com/search?find_desc=Restaurants&find_loc=Chicago%2C%20IL&start='

@@ -43,7 +43,7 @@ def read_request(request):
 
     try:
         # changed to utf-8 to accommodate international standards of url
-        return request.text.encode('utf-8')
+        return request.text.encode('utf-8')  #previously, 'iso-8859-1'
     except Exception:
         print("read failed: " + request.url)
         return ""

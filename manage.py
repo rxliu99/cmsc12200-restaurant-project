@@ -8,27 +8,44 @@
 
 import link_crawler
 import restaurant_crawler
-#import rent_income_crawler
+import housing_crawler
 #import regression
+import pandas as pd
+import csv
 
 def scrape_data():
     '''
     '''
     # link crawler
-    links = link_crawler.get_restaurant_links()
+    restaurant_links = link_crawler.get_restaurant_links()
 
     # Write 240 links to txt file
     with open(r"links.txt", "w") as f:
-        f.writelines(links)
+        f.writelines(restaurant_links)
         f.close()
 
     # restaurant crawler
-    df_restaurant = restaurant_crawler.get_info(links)
+    restaurant_info = restaurant_crawler.get_info(restaurant_links)
+    # convert to df then write to csv
+    df_restaurant = pd.DataFrame.from_dict(restaurant_info, orient='columns')
+    df_restaurant.to_csv('info.csv', index=False)
+    
+    # convert zip_code col in info.csv to a list of zipcodes
+    df_restaurant = pd.read_csv("info.csv", header=0)
+    lst_zipcode = list(set(df_restaurant.zip_code))
 
-    # rent_income crawler
+    '''
+    lst_zipcode = list(set(df_restaurant.zip_code))
+    '''
+
+    # rent crawler
+    housing_links = housing_crawler.get_links(lst_zipcode)
+    housing_info = housing_crawler.go(housing_links)
+
+    df_housing = pd.DataFrame(housing_info.items(), columns=['zip_code', 'housing_price'])
 
     # merge two dfs
-    df_final = df_restaurant.merge(df_rent_income, on='zip_code')
+    df_final = df_restaurant.merge(df_housing, on='zip_code')
 
     return df_final
 
