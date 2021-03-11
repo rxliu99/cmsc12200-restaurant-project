@@ -1,4 +1,4 @@
-from Search_Caroline_03090745 import Restaurants 
+from S earch_Caroline_03090745 import Restaurants 
 import pandas as pd
 
 csv_path = "info.csv"
