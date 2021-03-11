@@ -42,7 +42,8 @@ def scrape_data():
     housing_links = housing_crawler.get_links(lst_zipcode)
     housing_info = housing_crawler.go(housing_links)
 
-    df_housing = pd.DataFrame(housing_info.items(), columns=['zip_code', 'housing_price'])
+    df_housing = pd.DataFrame.from_dict(housing_info, orient='index').reset_index()
+    df_housing.columns = ['zip_code', 'housing_price', 'median_income']
 
     # merge two dfs
     df_final = df_restaurant.merge(df_housing, on='zip_code')

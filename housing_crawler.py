@@ -43,15 +43,21 @@ def go(housing_links):
         request = util.get_request(link)
         text = util.read_request(request)
         soup = bs4.BeautifulSoup(text, "html5lib")
-        pages_to_crawl = []
+
+        # find median income under this zipcode
+        li_tags = soup.find_all('li', class_="medium")
+        income = np.int64(re.findall(r'\d+(?:,\d+)?', li_tags[2].text)[0].replace(',',''))
+
         # collect all subpages under this zipcode
+        pages_to_crawl = []
         tags = soup.find('ul', class_="pagination")
         if tags is None:
             pages_to_crawl = [link]
         else:
             pages = tags.find_all('a', href=True)
             for a in pages:
-                pages_to_crawl.append(a['href'])
+                if a['href'] not in pages_to_crawl:
+                    pages_to_crawl.append(a['href'])
 
         for url in pages_to_crawl:
             print(url)
@@ -63,7 +69,7 @@ def go(housing_links):
             for item in property_tags:
                 d[zip_code].append(find_adj_price(item))
             
-        d[zip_code] = np.mean([x for x in d[zip_code] if x != 0])
+        d[zip_code] = (np.mean([x for x in d[zip_code] if x != 0]), income)
         
     return d
    

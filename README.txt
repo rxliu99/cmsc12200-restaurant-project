@@ -16,7 +16,7 @@
         1. Sometimes cannot get 240 exact links - use the saved 240 links for now
         2. cralwer info sometime gives None tag; only 185/240
 
-*Task3* [Progress] Julie Rent crawler - 
+*Task3* [Done] Julie Rent crawler - 
 
 *Task4* [Progress]Final csv
 
@@ -30,3 +30,11 @@
 
 
 ***************Project Documentation [FOR SUBMISSION]********************
+Files:
+        manage.py
+        links_crawler.py
+        restaurant_crawler.py
+        housing_crawler.py
+        regression.py
+        interface.py
+
