@@ -19,21 +19,31 @@ zip_codes.sort()
 
 def area_search():
     while True:
+        print("----------------------------------------------------------------------------------------------------")
         print("Which area do you want to search for?")
-        print("Please enter a Chicago zip code.")
+        print()
+        print("Please enter a Chicago zip code and hit enter.")
+        print()
         str2 = input("You can enter one of the following: " + "; ".join(zip_codes) + "\n")
+        print()
         if str2 == "quit":
             break
         elif str2 not in zip_codes:
-            print("Please enter a valid zip code of Chicago.")
+            print("Please enter a valid zip code of Chicago from the list above.")
+            print()
         else:
+            print("----------------------------------------------------------------------------------------------------")
+            print("Here's the search result for area with zipcode " + str2 + ":")
             returns = restaurants.single_return(None, int(str2))
             print("Number of restaurants in " + str2 + ":")
             print(returns[0])
+            print()
             print("Ratings of different cuisines in " + str2 + ":")
             print(returns[1])
+            print()
             print("Average prices of different cuisines in " + str2 + ":")
             print(returns[2])
+            print("====================================================================================================")
             print("Do you want to search another area?")
             str3 = input("Enter 'N' to quit and any other thing to continue.\n")
             if str3 == "N":
@@ -42,22 +52,32 @@ def area_search():
 
 def cuisine_search():
     while True:
+        print("----------------------------------------------------------------------------------------------------")
         print("Which cuisine do you want to search for?")
-        print("Please enter a cuisine type.")
+        print()
+        print("Please enter a cuisine type and hit enter.")
+        print()
 
         str2 = input("You can enter one of the following:\n" + "; ".join(all_cuisines) + "\n")
+        print()
         if str2 == "quit":
             break
         elif str2 not in all_cuisines:
-            print("Please enter a valid cuisine type.")
+            print("Please enter a valid cuisine type from the list above.")
+            print()
         else:
+            print("----------------------------------------------------------------------------------------------------")
+            print("Here's the search result for cuisine type " + str2 + ":")
             returns = restaurants.single_return(str2, None)
             print("Number of restaurants with " + str2 + " cuisine:")
             print(returns[0])
+            print()
             print("Ratings of different areas under " + str2 + " cuisine:")
             print(returns[1])
+            print()
             print("Average prices of different areas under " + str2 + " cuisine:")
-            print(returns[2]) 
+            print(returns[2])
+            print("====================================================================================================")
             print("Do you want to search another cuisine type?")
             str3 = input("Enter 'N' to quit and any other thing to continue.\n")
             if str3 == "N" or str3 == "quit":
@@ -66,21 +86,30 @@ def cuisine_search():
 
 def double_helper_area(cuisine):
     while True:
+        print("----------------------------------------------------------------------------------------------------")
         print("Which area do you want to search for?")
-        print("Please enter a Chicago zip code.")
+        print()
+        print("Please enter a Chicago zip code and hit enter.")
+        print()
         str2 = input("You can enter one of the following: " + "; ".join(zip_codes) + "\n")
         if str2 == "quit":
             break
         elif str2 not in zip_codes:
             print("Please enter a valid zip code of Chicago.")
+            print()
         else:
+            print("----------------------------------------------------------------------------------------------------")
+            print("Here's the search result for cuisine type in " + str2 + ":")
             returns = restaurants.double_return(cuisine, int(str2))
             print("Number of restaurants with " + cuisine + "cuisine in " + str2 + ":")
             print(returns[0])
+            print()
             print("Average price of restaurants with " + cuisine + "cuisine in " + str2 + ":")
             print(returns[1])
+            print()
             print("Average rating of restaurants with " + cuisine + "cuisine in " + str2 + ":")
             print(returns[2])
+            print("====================================================================================================")
             print("Do you want to search another pair of cuisine type and area?")
             str3 = input("Enter 'N' to quit and any other thing to continue.\n")
             if str3 == "N" or str3 == "quit":
@@ -92,26 +121,38 @@ def double_helper_area(cuisine):
 
 def double_search():
     while True:
+        print("----------------------------------------------------------------------------------------------------")
         print("Which cuisine do you want to search for?")
-        print("Please enter a cuisine type.")
+        print("Please enter a cuisine type and hit enter.")
+        print()
 
         str2 = input("You can enter one of the following:\n" + "; ".join(all_cuisines) + "\n")
+        print()
         if str2 == "quit":
             break
         elif str2 not in all_cuisines:
+            print()
             print("Please enter a valid cuisine type.")
+            print()
         else:
             double_helper_area(str2)
             break
 
 
+print("====================================================================================================")
 print("Seeking to open a restaurant in Chicago but dishearted by the lack of information?")
+print()
 print("Welcome to Foodies' restraunt assistant bot.")
+print()
 print("Enter 'quit' at any time to quit.")
+print("====================================================================================================")
+print()
 
 while True:
     print("What do you have in mind right now?")
+    print()
     str1 = input("A. An area    B. A cuisine type    C.Both an area and a cuisine type\n")
+    print()
     if str1 == "A":
         area_search()
         break
