@@ -104,9 +104,3 @@ def scatterplot(zipcode_info):
     ax.scatter3D(rent_array, income_array, res_price_array)
 
     plt.show()
-
-#x = linear_regression(zipcode_info)
-#print(x)
-#y = find_outliers(zipcode_info)
-#print(y)
-#scatterplot(zipcode_info, x[0], x[1])
