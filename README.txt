@@ -29,6 +29,10 @@
 
 
 
+Outlier: give special rec on places with less restaurant
+if select a zipcode, it's better to open a specific cuisine here
+
+
 ***************Project Documentation [FOR SUBMISSION]********************
 Files:
         manage.py

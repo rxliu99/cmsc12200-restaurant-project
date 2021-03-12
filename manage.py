@@ -9,7 +9,6 @@
 import link_crawler
 import restaurant_crawler
 import housing_crawler
-#import regression
 import pandas as pd
 import csv
 
@@ -50,13 +49,3 @@ def scrape_data():
     
     # write final df to csv
     df_final.to_csv('final.csv', index=False)
-
-
-def run_regression():
-
-
-    # regression
-
-    # selection
-
-

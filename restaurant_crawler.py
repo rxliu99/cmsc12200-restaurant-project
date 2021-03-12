@@ -32,7 +32,7 @@ def get_info(links):
         if tag is not None:
             d = json.loads(tag.text)
     
-            restaurant['name'] = d['name'].replace('&apos;',"'").\
+            restaurant['restaurant_name'] = d['name'].replace('&apos;',"'").\
                     replace('&amp;', "&")
             restaurant['zip_code'] = d['address']['postalCode']
 
@@ -45,9 +45,9 @@ def get_info(links):
                 else:
                     restaurant['price'] = price[0]
             else:
-                restaurant['price'] = 0
+                restaurant['price'] = None
 
-            restaurant['cuisine'] = d['servesCuisine']
+            restaurant['cuisine'] = d['servesCuisine'].replace('&amp;', "&")
 
             restaurant['num_review'] = len(d["review"])
             
