@@ -40,7 +40,7 @@ def go(housing_links):
 
     # start from the first zip_code...
     for link in housing_links:
-        zip_code = np.int64(link[-5:])
+        zip_code = str(link[-5:])
         d[zip_code] = []
         request = util.get_request(link)
         text = util.read_request(request)

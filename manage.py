@@ -28,9 +28,9 @@ def scrape_data():
     # convert to df then write to csv
     df_restaurant = pd.DataFrame.from_dict(restaurant_info, orient='columns')
     df_restaurant.to_csv('info.csv', index=False)
+    df_housing['zip_code'] = df_housing['zip_code'].astype(str)
     
     # convert zip_code col in info.csv to a list of zipcodes
-    df_restaurant = pd.read_csv("info.csv", header=0)
     lst_zipcode = list(set(df_restaurant.zip_code))
 
     '''
@@ -43,6 +43,7 @@ def scrape_data():
 
     df_housing = pd.DataFrame.from_dict(housing_info, orient='index').reset_index()
     df_housing.columns = ['zip_code', 'housing_price', 'median_income']
+    df_housing['zip_code'] = df_housing['zip_code'].astype(str)
 
     # merge two dfs
     df_final = df_restaurant.merge(df_housing, on='zip_code')
