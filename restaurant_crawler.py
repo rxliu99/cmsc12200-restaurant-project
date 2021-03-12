@@ -37,14 +37,16 @@ def get_info(links):
                         replace('&amp;', "&")
                 restaurant['zip_code'] = d['address']['postalCode']
 
-                if 'priceRange' in d:                               
-                    price = re.findall(r'[0-9]+', d['priceRange'])
-                    #Average of price upper and lower bounds
-                    if len(price) == 2:
-                        restaurant['price'] = (float(price[1]) +\
-                                float(price[0])) / 2
+                if 'priceRange' in d:
+                    if d['priceRange'] == "Above $61":
+                        restaurant['price'] = 70
+                    elif d['priceRange'] == "Under $10":
+                        restaurant['price'] = 5
                     else:
-                        restaurant['price'] = price[0]
+                        price = re.findall(r'[0-9]+', d['priceRange'])
+                        #Average of price upper and lower bounds
+                        restaurant['price'] = (float(price[1]) +\
+                                    float(price[0])) / 2
                 else:
                     restaurant['price'] = None
 

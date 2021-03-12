@@ -27,7 +27,7 @@ def scrape_data():
     restaurant_info = restaurant_crawler.get_info(restaurant_links)
     # convert to df then write to csv
     df_restaurant = pd.DataFrame.from_dict(restaurant_info, orient='columns')
-    df_restaurant.to_csv('info.csv', index=False)
+    df_restaurant.to_csv('info_0312.csv', index=False)
     df_housing['zip_code'] = df_housing['zip_code'].astype(str)
     
     # convert zip_code col in info.csv to a list of zipcodes
@@ -50,3 +50,13 @@ def scrape_data():
     
     # write final df to csv
     df_final.to_csv('final.csv', index=False)
+
+    # read df from final.csv and organize the df by zip_codes & avg price
+    df_final = pd.read_csv('final.csv')
+    df_by_zipcode = df_final.groupby('zip_code')['price'].mean().reset_index()
+    df_by_zipcode = df_by_zipcode[df_by_zipcode['price'].notna()]
+
+    #######Try restaurant crawler#####
+    import restaurant_crawler, chicago_links
+    restaurant_info = restaurant_crawler.get_info(chicago_links.links())
+    # will get a dictionary, then follow line 29-30 and save to csv
