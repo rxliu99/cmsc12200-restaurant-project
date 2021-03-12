@@ -2,7 +2,7 @@
 
 *Task1* [Done] Caroline links crawler - 240 links saved in chicago_links.py
 
-*Task2* [Almost done] Laurinda restaurant info crawler - saved in info_0306.csv
+*Task2* [Almost done] Laurinda restaurant info crawler - saved in info_0313.csv
 
         On a specific restaurant page, find the following:
         1. name
@@ -86,7 +86,7 @@ Interactions:
         c. "Graph"                 | The 3D graph containing the scatter plot of the zipcodes and a plane
                                    | of the best-fit restaurant prices
 
-Contributers:
+Contributors:
         Julie Fan
         Caroline Jiang
         Michelle Liu
