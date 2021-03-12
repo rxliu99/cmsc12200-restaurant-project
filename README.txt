@@ -34,12 +34,33 @@ if select a zipcode, it's better to open a specific cuisine here
 
 
 ***************Project Documentation [FOR SUBMISSION]********************
+
 Introduction:
         This project is carried out in fulfillment of the course requirement for 
         CMSC 12200 (Computer Science with Applications II) at the University of Chicago.
         The goal of this project is to offer future restaurant-owners in Chicago 
         1) information about the current restaurants in the area or cuisine of interest and
         2) information about the price of current restaurants.
+
+Description:
+        This project aims to provide restaurant-owners information on various restaurants in Chicago 
+        through obtaining average costs, rating, cuisine and address for restaurants. We also obtain 
+        average rent per square foot for Chicago housings as well as average personal income at each 
+        zipcode address. To achieve this, we crawl relevant data from Yelp and RENTCafé, and then we 
+        calculate the average spendings across restaurants, average rent and average income for each 
+        Chicago neighborhood. To obtain better understanding of elements such as different variable 
+        correlations, distributions, and potential outliers, we fit a multiple linear regression model 
+        on the response variable average restaurant price and two predictor variables average rent and 
+        income. Additionally, we create a 3D graph to obtain scatterplot and best-fit restaurant prices, 
+        as the regression model provides us the optimal restaurant price. 
+
+Users:
+        Users can choose either general or price information based on their preferences, and will be able
+        to search information based on cuisine type or area, or both. 
+
+Data Sources:
+        Yelp - Data for individual restaurants with price, rating and address info
+        RENTCafé - Data for Chicago housing with rent and zipcode info
 
 Files:
         links_crawler.py        -- Crawler that obtains the url to individual restaurants
@@ -50,7 +71,7 @@ Files:
                                    of a Chicago zipcode from RENTCafé
         regression.py           -- Multiple linear regression of the variables average rent, 
                                    average income, and average restaurant price
-        manage.py               -- 
+        manage.py               -- File to scrape data and read df from final.csv
         interface.py            -- Text-based user interface implementation
         README.txt              -- This file
 
