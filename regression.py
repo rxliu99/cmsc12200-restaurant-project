@@ -66,7 +66,7 @@ def find_outliers(zipcode_info):
 
     for zip_code, residule in code_residule:
         std_residule = (residule - mean) / std
-        if abs(std_residule) > 2:
+        if abs(std_residule) > 1:
             outliers.append(zip_code)
     
     outliers = list(set(outliers))
