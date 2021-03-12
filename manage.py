@@ -54,7 +54,10 @@ def scrape_data():
     # read df from final.csv and organize the df by zip_codes & avg price
     df_final = pd.read_csv('final_0312.csv')
     df_by_zipcode = df_final.groupby('zip_code')['price'].mean().reset_index()
+    # Drop if price is None
     df_by_zipcode = df_by_zipcode[df_by_zipcode['price'].notna()]
+    # Drop if housing_price is None
+    df_by_zipcode = df_by_zipcode[df_by_zipcode['housing_price'].notna()]
 
     #######Try restaurant crawler#####
     import restaurant_crawler, chicago_links
