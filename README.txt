@@ -15,14 +15,28 @@ Files:
                                    cuisine, number of reviews, and average rating from Yelp
 
         housing_crawler.py      -- Crawler that obtains the average rent and average income
-                                   of a Chicago zipcode from RENTCafé
+                                   of a Chicago zipcode (collected from info.csv) from RENTCafé
+
+        manage.py               -- Run three crawlers to obtain desired csv and text files 
+                                   for interaction use
 
         regression.py           -- Conduct multiple linear regression of the variables average 
                                    rent, average income, and average restaurant price
 
-        manage.py               -- 
+        search.py               -- Implement the search function of the software, namely mapping
+                                   data retrived from Yelp.com and Rentcafe.com to inputs specified 
+                                   by the user
 
         interface.py            -- Text-based user interface implementation
+
+        final.csv               -- csv written by manage.py that includes restaurant name, 
+                                   zipcode, price, cuisine, number of reviews, average rating,
+                                   housing price, and median income
+
+        info.csv                -- csv written by manage.py that includes restaurant name, 
+                                   zipcode, price, cuisine, number of reviews, and average rating from Yelp
+
+        links.txt               -- links return by link_crawler.py and written by manage.py
 
         README.txt              -- This file
 
@@ -31,8 +45,7 @@ The project can be divided into 2 steps, both of which can be ran by the code pr
 
 Step 1 - Data Crawling:
 
-        For user convenience, we saved links.txt (returned by line 22 in in scrape_data in manage.py), 
-        info.csv (returned by line 30 in scrape_data in manage.py) and final.csv (returned by line 47 
+        For user convenience, we saved links.txt, info.csv and final.csv (all returned by scrape_data 
         in manage.py) from our latest run. We strongly suggest the user directly move forward to step 2,
         where the interface automatically takes in pre-saved final.csv to return recommendations.
 
@@ -53,25 +66,26 @@ Step 2 - Interactions:
    
         User input                 | Outputs
         -----------------------------------------------------------------------
-        a. A Chicago zipcode       | 1. Number of restaurants in the zipcode
+        A. A Chicago zipcode       | 1. Number of restaurants in the zipcode
                                    | 2. Average Rating of different cuisines in the zipcode
                                    | 3. Average price of different cuisines in the zipcode
                                    | 4. The optimal restaurant price obtained by the regression model
                                              
-        b. A cuisine               | 1. Number of restaurants of the cuisine
+        B. A cuisine               | 1. Number of restaurants of the cuisine
                                    | 2. Average rating of the cuisine in different zipcodes
                                    | 3. Average price of the cuisine in different zipcodes
 
-        c. A zipcode and a cuisine | 1. Number of restaurants of the cuisine in the zipcode
+        C. A zipcode and a cuisine | 1. Number of restaurants of the cuisine in the zipcode
                                    | 2. Average rating of the cuisine in the zipcode
                                    | 3. Average price of the cuisine in the zipcode
 
-        d. "Outliers"              | 1. The zipcodes whose average restaurant prices are the outliers
+        D. "Outliers"              | 1. The zipcodes whose average restaurant prices are the outliers
                                    |    in the regression model
                                    | 2. The average restaurant price of each of the zipcodes
                                    | 3. The optimal restaurant price according to the regression model
+                                   | 4. The suggested price range for opening potential restaurants
         
-        e. "Graph"                 | The 3D graph containing the scatter plot of the zipcodes and a plane
+        E. "Graph"                 | The 3D graph containing the scatter plot of the zipcodes and a plane
                                    | of the best-fit restaurant prices
 
 Contributors:

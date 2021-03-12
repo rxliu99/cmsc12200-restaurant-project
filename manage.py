@@ -14,6 +14,8 @@ import csv
 
 def scrape_data():
     '''
+    Scrape restaurant from Yelp and rent & income data from RentCafe
+    Combine to produce a csv file for future use
     '''
     # crawl restaurant links
     restaurant_links = link_crawler.get_restaurant_links()

@@ -15,6 +15,11 @@ import pandas as pd
 def get_links(lst_zipcode):
     '''
     Create links that correspond to searching specific zipcodes on rentcafe
+
+    Input:
+        lst_zipcode (list): a list of zipcodes
+    Output:
+        housing_links (list): a list of links
     '''
     housing_links = []
     url = 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/'
@@ -30,10 +35,10 @@ def go(housing_links):
     '''
     Main function
     Inputs:
-        housing_links: a list of links obtained from inputing different
+        housing_links (list): a list of links obtained from inputing different
             zipcodes to the search bar of rentcafe.com
     Output: 
-        dictionary
+        d (dict): a dictionary mapping each zipcode to a tuple (mean_price, income)
     '''
     # a dictionary with zipcode as keys, avg rent price as values
     d = {}
@@ -62,7 +67,6 @@ def go(housing_links):
                     pages_to_crawl.append(a['href'])
 
         for url in pages_to_crawl:
-            print(url)
             request = util.get_request(url)
             text = util.read_request(request)
             soup = bs4.BeautifulSoup(text, "html5lib")
@@ -78,6 +82,8 @@ def go(housing_links):
 
 def find_adj_price(item):
     '''
+    Find average rent adjusted by number of beds and baths
+    
     Input:
         an item-information tag for a property
     Output:
@@ -120,53 +126,3 @@ def find_adj_price(item):
 
     else:
         return 0
-
-
-'''
-        with open(rental_link_chicago, 'w', newline="") as f:
-            for zipcode_val in average_rent_chicago.keys():
-                for avg_rent in average_rent_chicago[zipcode]:
-                    f.write("%s|%s\n"%(zipcode_val. avg_rent)
-                    # citation for the 3 lines above: https://www.tutorialspoint.com/How
-                     # -to-save-a-Python-Dictionary-to-CSV-file
-
-
-
-housing_links = ['https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60608',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60706',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60642',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60611',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60610',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60614',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60647',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60616',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60617',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60618',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60651',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60622',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60654',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60657',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60661',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60603',
- 'https://www.rentcafe.com/apartments-for-rent/us/il/cook-county/60607']
-
-
- d = {'60608': 651.3594079989433,
- '60706': 529.1048120720031,
- '60642': 1100.8205656642476,
- '60611': 1282.6057161809783,
- '60610': 1176.4588865012627,
- '60614': 1007.0407958721607,
- '60647': 823.6626264280893,
- '60616': 998.164818375335,
- '60617': 437.0625528572675,
- '60618': 662.8823957034,
- '60651': 475.92579309765733,
- '60622': 907.9714573031821,
- '60654': 1176.1860352195345,
- '60657': 900.1663655564432,
- '60661': 1259.30324370023,
- '60603': 1311.5895460415904,
- '60607': 1045.4380014381861}
-
- '''
