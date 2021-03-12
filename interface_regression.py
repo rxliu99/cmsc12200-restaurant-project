@@ -14,13 +14,14 @@ zip_codes = [str(i) for i in zip_codes]
 
 def zipcode_price ():
     while True:
+        print("----------------------------------------------------------------------------------------------------")
         print("Which area do you want to search for?")
         print("Please enter a Chicago zip code.")
         answer = input("You can enter one of the following: " + "; ".join(zip_codes) + "\n")
         if answer == "quit":
             break
         elif answer not in zip_codes:
-            print("Please enter a valid zip code of Chicago.")
+            print("Oops! Please enter a valid zip code of Chicago from the list above.")
         else:
             intercept, coefficients = regression.linear_regression(info)
 
@@ -29,6 +30,7 @@ def zipcode_price ():
             price = intercept +\
                     coefficients[0] * rent +\
                     coefficients[1] * income
+            price = round(price, 2)
             print("The optimal restaurant price in " + answer + "is $" + str(price) + " .")
             answer2 = input("Do you want to search another area? Y/N\n")
             if answer2 == "N" or answer2 == "quit":
@@ -41,19 +43,33 @@ def outlier():
     while True:
         lst = []
         intercept, coefficients = regression.linear_regression(info)
-        price = info.loc[info["zip_code"] == 60610].values.tolist()[0][1]
-        rent = info.loc[info["zip_code"] == 60610].values.tolist()[0][2]
-        income = info.loc[info["zip_code"] == 60610].values.tolist()[0][3]
-        opt_price = intercept + coefficients[0] * rent + coefficients[1] * income
+        outliers = regression.find_outliers(info)
+        for outlier in outliers:
+            price = info.loc[info["zip_code"] == int(outlier)].values.tolist()[0][1]
+            rent = info.loc[info["zip_code"] == int(outlier)].values.tolist()[0][2]
+            income = info.loc[info["zip_code"] == int(outlier)].values.tolist()[0][3]
+            opt_price = intercept + coefficients[0] * rent + coefficients[1] * income
+            price = round(price, 2)
+            opt_price = round(price, 2)
+            lst.append((int(outlier), price, opt_price))
 
-        print("The area 60610 is an outlier.")
-        print("The current average restaurant price is $" + str(price) + ".")
-        print("The optimal restaurant price is $" + str(opt_price) + ".")
+        for item in lst:
+            print("The area " + str(item[0]) + " is an outlier.")
+            print("The current average restaurant price is $" + str(item[1]) + ".")
+            print("The optimal restaurant price is $" + str(item[2]) + ".")
+            if item[1] > item[2]:
+                print("We recommend opening a restaurant with the price in the range $" \
+                      + str(item[2]) + " - $" + str(item[1]) + " .")
+            if item[1] < item[2]:
+                print("We recommend opening a restaurant with the price in the range $" \
+                      + str(item[1]) + " - $" + str(item[2]) + " .")
+            print("Please note that the outliers might exist due to the lack of enough data.")
         break
 
 def graph():
     while True:
         regression.scatterplot(info)
+        break
 
 print("Enter 'quit' at any time to quit.")
 
