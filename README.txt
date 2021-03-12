@@ -18,12 +18,12 @@
 
 *Task3* [Done] Julie Rent crawler - crawler_housing_Edits2.py
 
-*Task4* [Done]Final csv - final.csv
+*Task4* [Done] Final csv - final.csv
 
         1. merge csv from task 2 and 3 on zip_code 
         2. include 4 cols: zip_code, restaurant avg price, income, avg rent
 
-*Task5* [Almost done] Michelle Multiple Linear Regression + Plot - regression_0312.py
+*Task5* [Done] Michelle Multiple Linear Regression + Plot - regression_03120306.py
 
 *Task6* [Progress] Text-based interface - interface.py
 
