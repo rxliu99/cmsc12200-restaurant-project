@@ -1,4 +1,4 @@
-#This is a crawler aiming at getting avg rent from rentcafe.com
+# Crawling avg rent and median income for each zip code on rentcafe.com
 
 import bs4
 import re
@@ -8,6 +8,8 @@ import csv
 import sys
 import queue
 import numpy as np
+import csv
+import pandas as pd
 
 
 def get_links(lst_zipcode):

@@ -13,6 +13,11 @@ def get_info(links):
     '''
     Extract restaurants name, zipcode, price, 
         cuisine, num of reviews, average rating
+    
+    Input:
+        links (list)
+    Output:
+        info (dict)
     '''
     info = []
 
@@ -61,15 +66,3 @@ def get_info(links):
             print("empty tag", url)
 
     return info
-
-def to_df(info):
-    '''
-    Load info to a pandas dataframe
-    '''
-    return pd.DataFrame.from_dict(info, orient='columns')
-
-def to_csv(df):
-    '''
-    Load info to pandas dataframe then to csv
-    '''
-    return df.to_csv('info.csv', index=False)
