@@ -54,6 +54,7 @@ def outlier():
 def graph():
     while True:
         regression.scatterplot(info)
+        break
 
 print("Enter 'quit' at any time to quit.")
 

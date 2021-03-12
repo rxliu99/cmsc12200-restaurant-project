@@ -7,7 +7,7 @@ from sklearn import linear_model
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 
-df_final = pd.read_csv('final.csv')
+df_final = pd.read_csv('final_0313.csv')
 df_by_zipcode = df_final.groupby('zip_code')['price'].mean().reset_index()
 df_by_zipcode = df_by_zipcode[df_by_zipcode['price'].notna()]
 df_housing = df_final[["zip_code", "housing_price", "median_income"]]
@@ -66,33 +66,13 @@ def find_outliers(zipcode_info):
 
     for zip_code, residule in code_residule:
         std_residule = (residule - mean) / std
-        if abs(std_residule) > 1:
+        if abs(std_residule) > 2:
             outliers.append(zip_code)
     
     outliers = list(set(outliers))
 
     return outliers
 
-def predict_price(zipcode):
-    '''
-    Calculate the optimal restaurant price for a zipcode based on the regression.
-
-    Input:
-        zipcode: the zipcode of interest
-
-    Returns: the optimal price
-    '''
-    intercept, coefficients = linear_regression(zipcode_info)
-    rent = zipcode_info.loc[zipcode_info["zip_code"] == int(zipcode)]\
-           .values.tolist()[0][2]
-    income = zipcode_info.loc[zipcode_info["zip_code"] == int(zipcode)]\
-             .values.tolist()[0][3]
-    price = intercept +\
-            coefficients[0] * rent +\
-            coefficients[1] * income
-    price = round(price, 2)
-
-    return price
 
 def scatterplot(zipcode_info):
     '''

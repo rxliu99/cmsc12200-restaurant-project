@@ -15,9 +15,10 @@ def get_info(links):
         cuisine, num of reviews, average rating
     
     Input:
-        links (list)
+        links (list): a list of links returned by link_crawler.py
+        
     Output:
-        info (dict)
+        info (dict): a dictionary of restaurant info
     '''
     info = []
 
@@ -66,7 +67,7 @@ def get_info(links):
                 info.append(restaurant)
             
             else:
-                print("empty tag", url)
+                print("the link gives an empty tag")
         else:
             print("empty request", url)
 

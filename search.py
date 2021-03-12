@@ -5,9 +5,6 @@ import pandas as pd
 import numpy as np
 import math
 
-####delete
-csv_path = "final.csv"
-info = pd.read_csv(csv_path, header = 0, index_col = 0)
 
 '''
 print(info)
@@ -62,8 +59,12 @@ class Restaurants:
             new_df = dataframe[dataframe[name] == category]
             prices = new_df["price"].tolist()
 
-            if len(prices) != 0:
-                avg_price = np.nanmean(prices)
+            clean_prices = []
+            for price in prices:
+                if np.isnan(price) == False:
+                    clean_prices.append(price)
+            if len(clean_prices) != 0:
+                avg_price = np.mean(clean_prices)
                 avg_price = round(avg_price, 2)
                 avg_prices.append((avg_price, category))
         avg_prices.sort(reverse = True)
@@ -92,10 +93,16 @@ class Restaurants:
         all_info = self.double_division(cuisine, area)
         num_rest = len(all_info)
         prices = all_info["price"].tolist()
+        clean_prices = []
 
-        if len(prices) != 0:
-            avg_price = np.nanmean(prices)
+        for price in prices:
+            if np.isnan(price) == False:
+                clean_prices.append(price)
+
+        if len(clean_prices) != 0:
+            avg_price = np.mean(clean_prices)
             avg_price = round(avg_price, 2)
+
         else:
             avg_price = None
 
