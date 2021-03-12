@@ -1,10 +1,12 @@
-from math import radians, cos, sin, asin, sqrt
+#from math import radians, cos, sin, asin, sqrt
 import sqlite3
 import os
 import pandas as pd
 import numpy as np
+import math
 
-csv_path = "info.csv"
+####delete
+csv_path = "final.csv"
 info = pd.read_csv(csv_path, header = 0, index_col = 0)
 
 '''
@@ -16,15 +18,6 @@ class Restaurants:
     def __init__(self, db_file):
         self.db = db_file
 
-    '''
-    def execute_sql(self, sql, args = []):
-        connection = sqlite3.connect(self.db)
-        c = connection.cursor()
-        ob = c.execute(sql, args)
-        results = ob.fetchall()
-
-        return results
-    '''
 
     def area_division(self, area):
         area_sliced = self.db[self.db["zip_code"] == area]
@@ -41,7 +34,6 @@ class Restaurants:
 
     def double_division(self, cuisine, area):
         sliced = self.area_division(area)
-        #print(sliced)
         double_sliced = sliced[sliced["cuisine"] == cuisine]
 
         return double_sliced
@@ -54,11 +46,10 @@ class Restaurants:
             #print(name)
             #print(category)
             new_df = dataframe[dataframe[name] == category]
-            #rslt_df = dataframe[dataframe[name] == category]
-            #print(new_df)
             ratings = new_df["rating"].tolist()
             if ratings:
                 avg_rating = np.mean(new_df["rating"].tolist())
+                avg_rating = round(avg_rating, 2)
                 ranking.append((avg_rating, category))
         ranking.sort(reverse = True)
 
@@ -69,36 +60,29 @@ class Restaurants:
         avg_prices = []
         for category in categories:
             new_df = dataframe[dataframe[name] == category]
-
-            ###modify when csv price range data type is changed
             prices = new_df["price"].tolist()
 
-
-            if prices:
-                avg_price = np.mean(prices)
+            if len(prices) != 0:
+                avg_price = np.nanmean(prices)
+                avg_price = round(avg_price, 2)
                 avg_prices.append((avg_price, category))
         avg_prices.sort(reverse = True)
 
         return avg_prices
 
-    #以下三个合并
-    def cuisine_return(self, cuisine):
-        all_info = self.cuisine_division(cuisine)
-        #print(all_info)
-        areas = set(self.db["zip_code"].tolist())
-        ranking = self.rank_rating(all_info, "zip_code", areas)
-        prices = self.get_avg_price(all_info, "zip_code", areas)
-        num_rest = len(all_info)
 
-        return num_rest, ranking, prices
-
-
-    def area_return(self, area):
-        all_info = self.area_division(area)
-        #print(all_info)
-        cuisines = set(self.db["cuisine"].tolist())
-        ranking = self.rank_rating(all_info, "cuisine", cuisines)
-        prices = self.get_avg_price(all_info, "cuisine", cuisines)
+    def single_return(self, cuisine = None, area = None):
+        if cuisine and not area:
+            all_info = self.cuisine_division(cuisine)
+            areas = set(self.db["zip_code"].tolist())
+            ranking = self.rank_rating(all_info, "zip_code", areas)
+            prices = self.get_avg_price(all_info, "zip_code", areas)
+        elif area and not cuisine:
+            all_info = self.area_division(area)
+            cuisines = set(self.db["cuisine"].tolist())
+            ranking = self.rank_rating(all_info, "cuisine", cuisines)
+            prices = self.get_avg_price(all_info, "cuisine", cuisines)
+        
         num_rest = len(all_info)
 
         return num_rest, ranking, prices
@@ -106,32 +90,27 @@ class Restaurants:
 
     def double_return(self, cuisine, area):
         all_info = self.double_division(cuisine, area)
-        #print(all_info)
         num_rest = len(all_info)
-
-        ###modify when csv price range data type is changed
         prices = all_info["price"].tolist()
 
-        if prices:
-            #print(prices)
-            avg_price = np.mean(prices)
+        if len(prices) != 0:
+            avg_price = np.nanmean(prices)
+            avg_price = round(avg_price, 2)
         else:
             avg_price = None
 
-        ratings = [all_info["rating"].tolist()]
-        if ratings:
+        ratings = all_info["rating"].tolist()
+        if len(ratings) != 0:
             avg_rating = np.mean(ratings)
+            avg_rating = round(avg_rating, 2)
         else:
             avg_rating = None
 
         return num_rest, avg_price, avg_rating
 
+#x = Restaurants(info)
+#y = x.double_return("Italian", 60622)
+#print(y)
 
-x = Restaurants(info)
-result = x.cuisine_return("Italian")
-print(result)
-result = x.area_return(60614)
-print(result)
-result = x.double_return("Italian", 60622)
-print(result)
+
 
